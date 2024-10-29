@@ -18,7 +18,7 @@ public class Typeconversion {
         int x = (int) f;// here we have already changed the value of f to x as an integer
         System.out.println(x);// the output here is 5 since it has been converted to integer
 
-        // type promotion
+        // type promotion..........................................................................................................................................................
         byte k = 10;
         byte l =50;
         int outcome = k*l;// when we multiply the two value their result will be more than the byte validity so we promote the result to int since int can handle the value outcome

@@ -17,6 +17,23 @@ public class ArithmeticOperators {
         System.out.println("result after division is " + result2);
         result = number2%number1;// remainder
         System.out.println("result after remainder is "+result);
+        int num1 = 34;
+        num1 += 4; // this is also adding self number
+        System.out.println(num1);
+        num1 -= 4; // this is self subtracting
+        System.out.println(num1);
+        num1 %=5;// this will make bring the remainder
+        System.out.println(num1);
+        // that applies to all operators
+// you can also use incrementing
+        num1++;// incrementing
+        System.out.println(num1);
+        num1--;// decrementing
+        System.out.println(num1);
+        // difference between post and pre incrementing
+        int randomnumber = 8;
+        ++randomnumber;//first increment then fetch the value
+        randomnumber++;// this will first fetch the value of randomnumber and the increment
 
 
 
