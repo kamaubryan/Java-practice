@@ -3,6 +3,8 @@ import java.time.YearMonth;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
+import java.time.LocalDate;
+
 
 /*they work like logical operators hence but a little bit
 *if else
@@ -82,5 +84,36 @@ class SwitchStatement{
                System.out.println("wrong date");
                break;
        }
+    }
+}
+
+
+
+class Switchstatement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt for birth day and month
+        System.out.println("Enter your birth day (1-31): ");
+        int birthDay = scanner.nextInt();
+
+        System.out.println("Enter your birth month (1-12): ");
+        int birthMonth = scanner.nextInt();
+
+        // Get today's date
+        LocalDate today = LocalDate.now();
+        int currentDay = today.getDayOfMonth();
+        int currentMonth = today.getMonthValue();
+
+        // Check if today matches the birthday entered
+        if (birthDay == currentDay && birthMonth == currentMonth) {
+            System.out.println("Hurray! It's your birthday today!");
+        } else {
+            System.out.println("Today is not your birthday.");
+        }
+        System.out.println(currentDay);
+        System.out.println(currentMonth);
+
+        scanner.close();
     }
 }
