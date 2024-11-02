@@ -20,6 +20,5 @@ public class StaticMethods {
         //while accessing static methods its kinda different
         Method.methods();// here we have called the earlier static
     }
-
-
 }
+

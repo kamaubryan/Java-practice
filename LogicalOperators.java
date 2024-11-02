@@ -25,7 +25,7 @@ public class LogicalOperators {
         System.out.println("Logical Or "+ result);
         // Logical Not "!"
         result = num1>num3;// in this scenarion num1 is less than num3 hence the out will be false but we can reverse that with not operator
-        System.out.println("Logical OR " +!result);
+        System.out.println("Logical Not " +!result);
 
 
     }

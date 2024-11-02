@@ -33,9 +33,9 @@ public class StaticBlock {
 
     }
 }
-package Methods;
+//package Methods;
 
-class Static {
+class Static6 {
     int enough;
     static int notEnough;
     static String Car;
