@@ -1,4 +1,4 @@
-// variables are where we store our data. it behaves like a box where we store our data
+package Variable;// Variable.variables are where we store our data. it behaves like a box where we store our data
 // how we create variablees and how we execute them
 
 public class variables {

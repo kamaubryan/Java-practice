@@ -1,10 +1,12 @@
+package Methods;
+
 import java.util.Scanner;
 
 /*this where most operations happen at.
 * in every class create it should have a behavior and that behavior is called a method
 * */
 // lets create a class that has a method
-class car{// this class car has a behavior and we can define the method
+class car{// this class Methods.car has a behavior and we can define the method
     // if we dont want to give the method any return statement we use the "void" keyword
     public void engineRevving(){// here the word public means that youre giving it access to anything
         // so here we dont expect anything returned
@@ -18,15 +20,15 @@ class car{// this class car has a behavior and we can define the method
 }
 // we can create a class where in order to recieve something you have to meet certain conditions
 class BuyingCar{
-    public String BuyingAcar(int Money){// here it is a method where the user has to input a certain amount of money to access the car
+    public String BuyingAcar(int Money){// here it is a method where the user has to input a certain amount of money to access the Methods.car
         if (Money<3000000){
-            return ("tafuta pesa kijana");// remember to return
+            return "tafuta pesa kijana";// remember to return
         }
         else if (Money==3000000){
-            return ("bado we ni maskini  lakini una nafasi ya kuchukua hii gari");
+            return "bado we ni maskini  lakini una nafasi ya kuchukua hii gari";
         }
         else {
-            return ("kijana you have worked hard enough");
+            return "kijana you have worked hard enough";
         }
     }
 }
@@ -55,8 +57,10 @@ public class Methods {
         // here we are creating an instance of the class above
         BuyingCar buy = new BuyingCar();
 
-        String  result = buy.BuyingAcar(money);
+        String result = buy.BuyingAcar(money);// we have stored this as a string since its returning a string
         System.out.println(result);
+        scanner.close();
 
     }
 }
+

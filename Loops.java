@@ -55,3 +55,44 @@ class whileLoop{// this only print when the concept is only true using a one lin
         }
     }
 }
+
+// here we will use for each loop
+class EnhancedForLoop{
+
+    public static  void main(String[] args) {
+        String names[]= new String[4];
+        names[1] = "kamau";
+        names[0]= "brian";
+        names[3]="njoki";
+        names[2]="samuel";
+        // here we can use the for each loop in this example
+        for (String n: names){// here the code is much simpler than in the other for loops
+            System.out.println(n);
+        }
+        // lets try with another example
+        String namess [][]= new String[3][];// here we have specified the number of arrays we want but inside the arrays we have not specified the particular size of each array
+        // here we are specifying the size of the  inner arrays
+        namess[0]= new String[3];// this is the first array which has three values
+        namess[1] =new String[4];//this has four values
+        namess[2]=new String[2];// this has two values
+        // lets try storing the values manually
+        // this is the first array
+        namess[0][0]="brian";
+        namess [0][1]="Kiriro";
+        namess[0][2]="kamau";
+// second array
+        namess[1][0]="Steven";
+        namess[1][1]="njihia";
+        namess[1][2]="kamau";
+        namess[1][3]="Timothy";
+        // third array
+        namess[2][0]="mwangi";
+        namess[2][1]="kamau";
+        // we can now store the values inside the array
+      // here we can now use the enhanced for each loop
+      for (String hello[] : namess){
+          System.out.println(hello);// ill check this later
+      }
+
+    }
+}

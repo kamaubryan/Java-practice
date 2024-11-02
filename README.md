@@ -5,3 +5,4 @@ in order to run a java code you have to have the following
 * JVM = Java virtual machine - this is where your code is running from
 * JRE = Java Runtime Environment 
 
+jvm has a stack memory which uses the first in first out method of executing code
