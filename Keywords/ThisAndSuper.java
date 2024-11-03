@@ -1,3 +1,5 @@
+package Keywords;
+
 /*super keyword is always default in all which it means that after calling parameter which also occure after inheriting
 it call the constructor of the super class or the base class
 *this keyword is basically used to mean that you want tp print all the constructors in the same class
@@ -10,7 +12,7 @@ class randomclass1 extends Object{
     // this super method means that call the constructor of a super class
     public randomclass1() {
         super();// this always there
-        System.out.println("yoow I'm in class randomclass1");
+        System.out.println("yoow I'm in class Keywords.randomclass1");
     }
     // we can also create a parameterized consttructor
     public randomclass1(int AnyNumber){
@@ -18,14 +20,14 @@ class randomclass1 extends Object{
         System.out.println("hello there this is just any number " + ":"+ AnyNumber);
     }
 }
-// the second class extends from the super class randomclass1
+// the second class extends from the super class Keywords.randomclass1
 class randomclass2 extends randomclass1{// when we specify the class to extend from for example in this class we only extends from the class above
     // we  can create a constructor that returns a simple statement
 
     public randomclass2() {
         super(34);// then in this constructor we have specified that it will print from the super non-parameterised constructor; we can specify the parameterized one
 
-        System.out.println("yoow I'm in class randomclass2");
+        System.out.println("yoow I'm in class Keywords.randomclass2");
     }
     // we can create another constructor that accepts parameter
     public randomclass2(String greeting){
@@ -40,7 +42,7 @@ public class ThisAndSuper {
         // lets create for the second
         // when we have already created the object of the class above the constructor in class1 will also be executed
 
-        randomclass2  rclass2 = new randomclass2();// here we are calling the default constructor of randomclass2; since we have not given it parameters
+        randomclass2  rclass2 = new randomclass2();// here we are calling the default constructor of Keywords.randomclass2; since we have not given it parameters
         // the constructor has already been called after instanciating the new object
         // here we can specify which constructor is being called by just adding the parameter
         rclass2 = new randomclass2("yoow");// in this case the first parameter in the first class is being called
