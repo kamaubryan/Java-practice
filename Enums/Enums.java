@@ -1,6 +1,7 @@
 package Enums;
 /*this are defined constants that we do create
-*
+*you cant extend a class from enum
+* enum only extends the enum class
 * */
 
 enum cars{
@@ -11,6 +12,8 @@ public class Enums {
     public static void main(String[] args) {
         // we cann create a reference object like we do in classes
         cars mycar = cars.luxury;// inside the class enums the content in there is always an object
+        // we can try to get the type of class
+        System.out.println(mycar.getClass().getSuperclass());// output "class java.lang.Enum"
         // we can print the result
         // 1st way
         String name = mycar.name();
