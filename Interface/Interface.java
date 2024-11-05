@@ -2,6 +2,7 @@ package Interface;
 /*
 * this a better way of storing public abstract methods instead of storing them in classes
 * instead you can use the anonymous inner classes to access the abstract method
+* a single class can implement multiple interfaces
 * */
 interface A {
     // everything in here is an abstract  so there is no need to declare them as abstract and public
@@ -10,6 +11,30 @@ interface A {
     //when you declare a variable in an interface they are always final and you cant change the value
     int money = 350486; // this is finall you cant change it
     String Quote = "you have to win no matter what";
+}
+// lets create another interfaces
+interface example1 {
+    // we have created a method
+    void show();
+}
+// lets now create a class that implements two interfaces
+class implementInterfacess implements A,example1{// we have implemented two interfaces
+    // we now have to define the methods
+
+    @Override
+    public void show() {
+        System.out.println("we have just implemented two methods");
+    }
+
+    @Override
+    public void showA() {
+        System.out.println("we are in class implementationInterfaces");
+    }
+
+    @Override
+    public void getA() {
+        System.out.println("getted in class implementationInterfaces");
+    }
 }
 
 // we have to create a class that implements the interface above
@@ -75,5 +100,12 @@ public class Interface {
         };
         c.getA();
         c.showA();
+
+        // we can now come and create an object of the class implementation
+        implementInterfacess myclass = new implementInterfacess();
+        // now we can access the statements
+        myclass.getA();
+        myclass.showA();
+        myclass.show();
     }
 }
