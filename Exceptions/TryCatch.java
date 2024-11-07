@@ -27,7 +27,7 @@ public class TryCatch {
             int result = num1/num2;// this is a logic division so no error should occur
 
         } catch (Exception e) {
-            System.out.println("not possible");// this statement wont be printed since there is no error above
+            System.out.println("not possible");// this statement won't be printed since there is no error above
         }
         System.out.println("it was successfull");
         System.out.println(num1);

@@ -1,4 +1,4 @@
-// they are divided into two : primitive and non-primitive data types
+  // they are divided into two : primitive and non-primitive data types
 // primitive datatypes are later divided into four: integer,float,character,boolean
 public class DataTypes {
     public static void main(String[] args) {
