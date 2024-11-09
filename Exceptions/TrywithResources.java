@@ -22,19 +22,19 @@ public class TrywithResources {
             scanner.close();
         }
 //        // lets try printing an out of bounds array
-//        String names [] = new String[4];// has initial values
-//     // lets try to catch an array that is out of bounds
-//        try {
-//            String name1 = names[6];// this will throw an error
-//
-//        }
-//        catch (ArrayIndexOutOfBoundsException e){
-//            System.out.println("this is out of bounds " +e);
-//        }
-//        // here we can have a statement that is gonna be executed regardless
-//        // finally can also be used to close a resource
-//        finally {
-//            System.out.println("go home to your families");
-//        }
+   String names [] = new String[4];// has initial values
+     // lets try to catch an array that is out of bounds
+        try {
+            String name1 = names[6];// this will throw an error
+
+       }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("this is out of bounds " +e);
+        }
+        // here we can have a statement that is gonna be executed regardless
+        // finally can also be used to close a resource
+        finally {
+            System.out.println("go home to your families");
+        }
     }
 }

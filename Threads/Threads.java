@@ -9,19 +9,28 @@ package Threads;
 class Kenya extends Thread {
     // a methods that prints the statements and it should always be run
     public void  run(){
-        for (int r=0; r<=10; r++){
+        for (int r=0; r<=100; r++){
             System.out.println("Ruto must Go");
+            // we can try to print them in a sequence
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
-    public void start() {
-    }
 }
 // we can create another class
 class fucked  extends Thread{
     public void run(){
-        for (int r=0 r<=10;r++){
+        for (int r=0; r<=100;r++){
             System.out.println("Ruto is a nuisance");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
@@ -33,5 +42,15 @@ public class Threads {
         // inorder to start the thread you have to use thread.start
         fKenya.start();
         f.start();
+
+        // we can also set the priority in which a a certain thread can run
+        // the default priority is usually 5
+        System.out.println(fKenya.getPriority());// default is five
+        // 5-10 is usually high priority and 5-0 is usually low priority
+        fKenya.setPriority(9);// here we have set it to high priority
+        System.out.println(fKenya.getPriority());
+        // we can now set it to low priority
+        fKenya.setPriority(1);
+        System.out.println(fKenya.getPriority());
     }
 }
