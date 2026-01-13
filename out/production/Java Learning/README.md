@@ -12,3 +12,4 @@ we have to use camel casing for best practices
 classes - capital letters 
 methods can be small letter tho if its two joined letter you should use camel casing
 constants = fully capital letters
+wawiwa

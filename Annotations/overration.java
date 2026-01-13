@@ -19,7 +19,7 @@ class merc extends car{
         return engineType;
     }
 
-    @Override// here we have overwridden the method
+    @Override// here we have override  the method
     public String getcolor(String color) {
       this.color = color;
         return color;
