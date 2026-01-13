@@ -10,5 +10,8 @@ public class variables {
         int num2 = 54;
         int result = num2+num1; // here we have use the add operator
         System.out.println("the result is equals to"+" "+result);
+
+
+
     }
 }
