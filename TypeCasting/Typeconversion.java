@@ -1,3 +1,5 @@
+package TypeCasting;
+
 /*
 * this involves converting from one datatype to another
 * also casting is involved
