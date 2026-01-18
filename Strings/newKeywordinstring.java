@@ -11,5 +11,21 @@ public class newKeywordinstring {
         // instead of all that work you just can use the following
         String Car = "mercedes benz gle 63 AMG";
         System.out.println(Car);
+
+        StringExample.main(args);
+
     }
 }
+
+class StringExample {
+    public static void main(String[] args) {
+        // normal way of creating a string
+
+        String Greeting = "hello";
+        System.out.println(Greeting);
+
+        // using a new keyword to create a memory in the heap memory
+        String acceptable = new String("Cool");
+        System.out.println(acceptable);
+
+    }}
