@@ -1,3 +1,5 @@
+package JavaOperators;
+
 /*
 * this is mostly used in making the decision making
 * they include AND "&&" with OR "||" with NOT "!"
