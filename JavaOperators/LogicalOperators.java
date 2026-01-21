@@ -29,6 +29,24 @@ public class LogicalOperators {
         result = num1>num3;// in this scenarion num1 is less than num3 hence the out will be false but we can reverse that with not operator
         System.out.println("Logical Not " +!result);
 
+logicalOperators.main(args);
+    }
 
+}
+
+class logicalOperators{
+    public static void main(String[] args) {
+        int number1 = 100;
+        int number2 = 150;
+        int number3 = 200;
+        // And operator
+        System.out.println(" operator and : " +( (number1>number2)&&(number2<number3)));
+        System.out.println("operator and : " + ((number2>number1)&&(number3>number2)));
+        // or operator
+        System.out.println("operator or : " + ((number1>number2)||(number3>number2)));
+        System.out.println("operator or : " + ((number1>number2)|| (number3<number2)));
+        // not operator
+        System.out.println("operator not : "+ (!(number2>number3)));
+        System.out.println("operator not : " + (!(number2<number3)));
     }
 }
