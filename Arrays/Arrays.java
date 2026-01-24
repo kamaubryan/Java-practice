@@ -31,9 +31,48 @@ public class Arrays {
         for (int k=0; k<numbers.length;k++){
             System.out.println(numbers[k]);
         }
+             ArraysExample.main(args);
 
 
 
+    }
+}
+
+class ArraysExample{
+
+    public static void main(String[] args) {
+
+        // declaring an array
+
+        // first method
+        int [] array = {1,2,2,3,4,5};
+       for (int Array : array){
+           System.out.println(Array);
+       }
+        // second method
+        String names [] = {"kamau", "Brian" , "kiriro"};
+        for (String Namess : names){
+            System.out.println(Namess);
+        }
+
+        // knowing the array length
+
+        System.out.println(" the array length of  array is : " + array.length);
+        System.out.println("the array length of names is : "  +names.length);
+
+        // changing the array elemnt
+
+        array[0] =0;
+        array[1]=1;
+        for (int updatedArray: array)
+        {
+            System.out.println("this is the updated array : " + updatedArray);
+        }
+
+        names[2] = "Njihia";
+        for (String updatedNames : names){
+            System.out.println("updated names : " + updatedNames );
+        }
 
     }
 }
