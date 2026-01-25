@@ -28,7 +28,7 @@ public class RevisedArrayofObjects {
         // accessing the elements
 
         for (int i=0; i<favLaptops.length; i++){
-        System.out.println("this is my " + i  + " favourite laptop " + favLaptops[i].name + " and it costs $" + favLaptops[i].price  );}
+        System.out.println("this is my " + (i+ 1) + " favourite laptop " + favLaptops[i].name + " and it costs $" + favLaptops[i].price  );}
 
 
     }
