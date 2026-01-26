@@ -1,4 +1,7 @@
 package Conditionals;
+
+import java.util.Scanner;
+
 // they are used in decison making
 public class Conditionals {
 
@@ -49,8 +52,51 @@ public class Conditionals {
 
         // nested ternary operator
 
-        int age = 22;
-        String legalAge = (age<18)? "still a kid" : (age<=21)? "abit a grown up" : (age >=21) ? "can even enter into clubs" : "you are adult";
+        int age = 25;
+        String legalAge = (age<18)? "still a kid" : (age<=21)? "abit a grown up" : (age <=25) ? "can even enter into clubs" : "you are a full adult";
         System.out.println(legalAge);
+
+
+        // other method
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your preferred typa girl");
+        String PrefferedGirl = scan.nextLine();
+
+
+        System.out.println( PrefferedGirl.equals("pretty chick")? "good choice": PrefferedGirl.equals("good personality")? "amazing choice": "reenter again" );
+
+
+        // switch statements
+
+        Scanner scann = new Scanner(System.in);
+        System.out.println("Enter the day ");
+        String Day = scann.nextLine();
+
+        switch (Day){
+            case "monday":
+                System.out.println("the first day of the week");
+                break;
+            case "tuesday":
+                System.out.println("the second day of the week");
+                break;
+            case "wednesday":
+                System.out.println("the third day of the week");
+                break;
+            case "thursday":
+                System.out.println("the fourth day of the week");
+                break;
+            case "friday":
+                System.out.println("the fifth day of the week");
+                break;
+            case "saturday":
+                System.out.println("the sixth day of the week");
+                break;
+            case "sunday":
+                System.out.println("the seventh day of the week");
+                break;
+            default:
+                System.out.println("no day like that fahm ");
+        }
+
     }
 }
