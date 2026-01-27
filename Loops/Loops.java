@@ -1,3 +1,5 @@
+package Loops;
+
 import java.util.Scanner;
 
 /*this is used to iterate around conditions
