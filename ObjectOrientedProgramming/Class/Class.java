@@ -1,6 +1,7 @@
 package ObjectOrientedProgramming.Class;
 
 
+
 // lets first create a class that had attributes
 
 class car {

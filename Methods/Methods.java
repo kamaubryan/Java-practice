@@ -50,10 +50,10 @@ public class Methods {
         myCar.getName(fname,Sname);
         // for us to print the values we can do that in two ways
         // or by just printing the details given
-        System.out.println("this are your names "+myCar.getName(fname,Sname));
+        System.out.println("this are your names : "+myCar.getName(fname,Sname));
         // storing in another variable
         String AllNames = myCar.getName(fname,Sname);
-        System.out.println("this are your names"+ AllNames);
+        System.out.println("this are your names : "+ AllNames);
         // here we are creating an instance of the class above
         BuyingCar buy = new BuyingCar();
 
