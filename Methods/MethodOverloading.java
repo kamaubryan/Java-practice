@@ -30,5 +30,36 @@ public class MethodOverloading {
        double result2= subtract.subtract(5.44,4);
         System.out.println(result2);
 
+
+        Overloading.main(args);
+    }
+}
+
+// this is a state where a method can have the same name but different parameters
+class Overloading{
+    static int Subtract(int Y, int X){
+        int subtraction = X -Y;
+        return subtraction;
+    }
+
+    static double Subtract(double M, double N){
+        double subtraction = M- N;
+        return subtraction;
+    }
+
+    // we can aslo have a method with the same data type but different parameters
+
+    static int Subtract(int K){
+        int subtraction = 10 - K;
+        return subtraction;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(" this is the first method : " + Subtract(20,30));
+
+        System.out.println(" this is the second method : " + Subtract(3.2, 4.3));
+
+        System.out.println(" this is the third Method : " + Subtract(12));
     }
 }
