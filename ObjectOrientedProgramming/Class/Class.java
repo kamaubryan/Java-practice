@@ -9,7 +9,7 @@ class car {
     String Make ;
     String CarType ;
 
-    public car (int YOM, String Make, String CarType){
+    public car (int YOM, String Make, String CarType){ // this is a constructor
         this.YOM = YOM;
         this.Make = Make;
         this.CarType= CarType;
