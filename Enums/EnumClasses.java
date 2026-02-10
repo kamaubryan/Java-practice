@@ -27,11 +27,11 @@ public class EnumClasses {
         };
         // we can change a specific price of a certain car
         mycar.setPrice(347777);
-        System.out.println(mycar + " : "+"ksh"+ mycar.getPrice());
+        System.out.println(mycar + " : "+"ksh. "+ mycar.getPrice());
         //
         mycar = Car.GTI;
         mycar.setPrice(598236245);
-        System.out.println(mycar + " : "+"ksh"+ mycar.getPrice());
+        System.out.println(mycar + " : "+"ksh. "+ mycar.getPrice());
     }
 
 }
