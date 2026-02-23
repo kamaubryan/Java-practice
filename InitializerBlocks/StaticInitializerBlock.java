@@ -1,5 +1,5 @@
 package InitializerBlocks;
-// this executes the code before object initialization during the class loading state
+// this executes the code before object initialization during the class loading state (the main method in this case)
 public class StaticInitializerBlock {
 
     // this runs in the compile time
