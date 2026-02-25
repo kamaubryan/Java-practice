@@ -22,3 +22,21 @@ public class Initializerblocks {
         System.out.println(" in the main method");
     }
 }
+
+class InitializerBlockExample{
+    static int number= 1;
+    public String Name = "DTMF";
+    {
+        System.out.println(" the song by badbunny : " + Name + " is number : " + number + " in the billboard charts" );
+    }
+    // you have to initialize the class constructor
+    public InitializerBlockExample(){
+  
+    }
+
+    public static void main(String[] args) {
+        InitializerBlockExample example = new InitializerBlockExample();
+
+        System.out.println(" in the main method");
+    }
+}
