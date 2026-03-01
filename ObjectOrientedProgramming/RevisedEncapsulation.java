@@ -7,6 +7,19 @@ class Laptop{
     private int Price;
     private String Color;
 
+//    // nor arguments constructor
+//    Laptop(){
+//
+//    }
+//
+//
+////     parameterized constructor
+//    Laptop(String Brand, int Price, String Color){
+//        this.Brand = Brand;
+//        this.Price = Price;
+//        this.Color = Color;
+//    }
+
     public String getColor() {
         return Color;
     }
@@ -42,7 +55,6 @@ public class RevisedEncapsulation {
         PremiumLaptop.setColor("DARK GREY");
 
         System.out.println("One of the most premium brands is a " + PremiumLaptop.getBrand() +  " which costs around " + PremiumLaptop.getPrice() + " dollars and is " + PremiumLaptop.getColor() + " in colour");
-
-
+//        Laptop newlaptop = new Laptop("Mac", 7000,"space black");
     }
 }
