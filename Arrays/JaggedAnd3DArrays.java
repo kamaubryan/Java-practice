@@ -107,5 +107,44 @@ class UserInputJaggedArray {
         }
 
         scan.close();
+    }}
+
+class _3dJaggedArrays {
+    public static void main(String[] args) {
+
+        String[] osNames = {"Android", "iOS"};
+
+        String[][][] smartphones = new String[2][][];
+
+        // Android
+        smartphones[0] = new String[3][];
+        smartphones[0][0] = new String[]{"Tecno Spark", "Tecno Camon", "Tecno Phantom"};
+        smartphones[0][1] = new String[]{"Samsung A Series", "Samsung S Series"};
+        smartphones[0][2] = new String[]{"Redmi Note Series", "Redmi Plus Series", "Redmi Pro Series"};
+
+        // iOS
+        smartphones[1] = new String[1][];
+        smartphones[1][0] = new String[]{"iPhone Plain", "iPhone Pro Series", "iPhone Max Series"};
+
+        // OUTPUT
+        for (int i = 0; i < smartphones.length; i++) {
+
+            System.out.println(osNames[i]);
+
+            for (int j = 0; j < smartphones[i].length; j++) {
+
+                System.out.println("  Brand:");
+
+                for (int k = 0; k < smartphones[i][j].length; k++) {
+                    System.out.println("    └─ " + smartphones[i][j][k]);
+                }
+
+                System.out.println();
+            }
+
+            System.out.println();
+        }
     }
 }
+
+
