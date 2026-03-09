@@ -62,14 +62,13 @@ public class Conditionals {
         System.out.println("Enter your preferred typa girl");
         String PrefferedGirl = scan.nextLine();
 
-
         System.out.println( PrefferedGirl.equals("pretty chick")? "good choice": PrefferedGirl.equals("good personality")? "amazing choice": "reenter again" );
 
 
         // switch statements
 
         Scanner scann = new Scanner(System.in);
-        System.out.println("Enter the day ");
+        System.out.println(" Enter the day ");
         String Day = scann.nextLine();
 
         switch (Day){

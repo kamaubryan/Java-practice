@@ -4,12 +4,12 @@ package Enums;
 enum Car{
     // we have created constant of cars
     Toyota(3000000),Mercedes(5000000),Ford(4000000),GTI(2500000), ;
-    // lets create a constructor in order to incoporate the prices
+    // let's create a constructor in order to incoporate the prices
     private int price;
     private Car(int price) {
         this.price = price;
     }
-    // lets create a getter and a setter to get the price that is in private
+    // let's create a getter and a setter to get the price that is in private
     public int getPrice(){
         return price;
     }

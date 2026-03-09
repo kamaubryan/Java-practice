@@ -4,7 +4,7 @@ package Exceptions;
 * */
 
 class A {
-    public void show(){
+    public void showa(){
         try {
             // lets try searching for a class thats not in this package
             Class.forName("yoow ");// there is no class like this
@@ -26,7 +26,7 @@ public class DuckingExceptions {
     public static void main(String[] args) {
         // here we are trying to create an object of the class above inorder to call the method with the try catch
         A a = new A();
-        a.show();
+        a.showa();
 
         // now we have to create the try catch here
         B b = new B();
