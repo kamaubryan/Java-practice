@@ -45,5 +45,33 @@ public class lists {
         TechJobs.remove(2);
 
         System.out.println(" After removal : " + TechJobs);
+
+        // checking if an element is present
+
+        boolean isATechJob = TechJobs.contains("Project Manager");
+        System.out.println(" is project manager a tech Job ? " + isATechJob);
+
     }
 }
+
+class arrayList {
+    // this is a subclass of the list array.
+    // it accepts duplicate and stores the elements in the order they are inserted
+    public static void main(String[] args) {
+
+        ArrayList<String> Names =  new ArrayList<>();
+
+        Names.add("Kamau");
+        Names.add("Kiriro");
+        Names.add("Brian");
+
+        System.out.println(" the following are the names of the most blessed guy : ");
+
+        for (String names : Names){
+            System.out.println( "                : " + names);
+        }
+
+        // you can add the normal methods
+    }
+}
+
